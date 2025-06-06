@@ -1,0 +1,79 @@
+.movie-card {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+  color: white;
+}
+
+.poster-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.poster-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.button-group {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.buy-ticket-button,
+.trailer-button {
+  padding: 6px 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-ticket-button {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.trailer-button {
+  background-color: #444;
+  color: white;
+}
+
+.rating {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ffcc00;
+  color: black;
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.age {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: red;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.movie-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
