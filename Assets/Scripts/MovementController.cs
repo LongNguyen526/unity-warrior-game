@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -61,4 +62,17 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        //if (collision.gameObject.CompareTag("DIAMOND"))
+        //{
+        //    Destroy(collision.gameObject);
+        //}
+        if (collision.gameObject.CompareTag("TELEPORT"))
+        {
+            SceneManager.LoadScene("Level02");
+        }
+    }
+
 }
